@@ -67,14 +67,20 @@ $roupa = $stm->fetch(PDO::FETCH_ASSOC);
             value="<?php echo $roupa["qtd_produto"]?>" required /> 
           </p>
     
-          <a>
-            <input type="submit" value="Editar" /> 
-</a>
+          <div id="cxBtn">
+            <input type="submit" value="Editar" />
+            <input type="button" value="Cancelar" id="btnCancelar">
+          </div>
 
 </div>
-       
-        <input type="submit" value="cancelar" href="../listaProduto.php">
-</form>
+        </form>
+<script>
+  const btn = document.getElementById('btnCancelar')
+  btn.addEventListener('click',()=>{
+    window.location = '../produto/listaProduto.php'
+  })
+</script>
+</div>
 
 
 </body>

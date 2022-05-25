@@ -71,13 +71,19 @@ $cliente = $stm->fetch(PDO::FETCH_ASSOC);
           </p>
     
           
-          <a>
-            <input type="submit" value="Editar" /> 
-</a>
+          <div id="cxBtn">
+            <input type="submit" value="Editar" />
+            <input type="button" value="Cancelar" id="btnCancelar">
+          </div>
 
 </div>
-        <input type="submit" value="cancelar" href="../listaCliete.php">
         </form>
-
+<script>
+  const btn = document.getElementById('btnCancelar')
+  btn.addEventListener('click',()=>{
+    window.location = '../cliente/EditaCliente.php'
+  })
+</script>
+</div>
 </body>
 </html>

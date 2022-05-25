@@ -20,9 +20,8 @@ if(!isset($_SESSION['username'])){
 <body>
     <nav class="dp-menu">
         <ul>
-            <li><span style="font-size:20px;fonte-style:italic;color:white;cursor:pointer" onclick="openNav()">&#9776; Abrir</span></li>
-            <li><a href="../destroy.php">Sair</a></li>
-              
+            <li><span style="font-size:20px;fonte-style:italic;color:white;cursor:pointer" onclick="openNav()">&#9776; Abrir</span> <a href="../destroy.php">Sair</a></li>
+            <li></li>
             </li>
             <li><img src="../img/logo.png" alt="" class="brand-image img-retangular elevation-2" style="opacity: .8" width="100" height="50" >
         </ul>
@@ -39,19 +38,20 @@ if(!isset($_SESSION['username'])){
 </div>
 
 <main>
-        <div class="gallery-container">
-            <a href="../img/roupa5.jpeg" class="gallery-items">
-                <img src="../img/roupa5.jpeg" alt="">
+    <div>
+        <h1 style='text-transform: uppercase;'>BEM VINDO, <?php echo($_SESSION['username']['username']) ?></h1>
+    </div>
+    <div class='cxCard' >
+        <div class='card'>
+            <h3>Lista Produto</h3>
+            <a href="produto/listaProduto.php">
+                <button>Ir Para...</button>
             </a>
-            <a href="../img/roupa2.jpeg" class="gallery-items">
-                <img src="../img/roupa2.jpeg" alt="">
-            </a>
-            <a href="../img/roupa3.jpeg" class="gallery-items">
-                <img src="../img/roupa3.jpeg" alt="">
-            </a>
-           
-           
-    </main>
+        </div>
+        <div class='card'></div>
+        <div class='card'></div>
+    </div> 
+</main>
    
 
 <footer class="site-footer">

@@ -68,7 +68,7 @@
    
   /*estilo dos input,  menos o checkbox */
   input:not([type="checkbox"]){
-    width: 95%;
+    width: 100%;
     margin-top: 4px;
     padding: 10px;    
     border: 1px solid #b2b2b2;
@@ -84,7 +84,7 @@
   }
    
   /*estilo do botão submit */
-  input[type="submit"]{
+  input[type="submit"],#btnCancelar{
     width: 45%!important;
     cursor: pointer;  
     background:  #9932CC;
@@ -97,13 +97,13 @@
     -webkit-border-radius: 5px;
     border-radius: 5px;
     float: left;
-    
-   
     transition: all 0.2s linear;
   }
-   
-   
 
+   
+  #btnCancelar a{
+    color: #fff;
+  }
   #login{
     position: absolute;
     top: 15px;
@@ -134,7 +134,12 @@
   -webkit-animation-delay: .1s;
   animation-delay: .1s;
 }
- 
+ #cxBtn{
+   display: flex;
+   justify-content: space-between;
+  align-items: center;
+
+ }
 /*fadeInLeft*/
 @-webkit-keyframes fadeInLeft {
     0% {
@@ -198,7 +203,9 @@
 
 .dp-menu ul {
     background-color: var(--cor-fundo);
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .dp-menu ul li {
@@ -208,7 +215,7 @@
 .dp-menu ul li img {
   display:inline;
   position: relative;
-  left: 1020px;
+  
 }
 
 .dp-menu ul li a {
@@ -296,7 +303,9 @@
 body{
   background-color: #eee;
 }
-
+main{
+  background-color: #eee;
+}
 
 .gallery-container{
   display: flex;
@@ -304,6 +313,17 @@ body{
   justify-content: space-evenly;
   gap: 2vw;
   padding: 0 2vw;
+}
+.cxCard{
+  background-color: #eee;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+}
+.card{
+  width: 300px;
+  height: 300px;
 }
 .gallery-items{
   width: 340px;

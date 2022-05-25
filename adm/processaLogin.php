@@ -15,7 +15,7 @@ try {
 
     if ($campo = $stmt->fetch(PDO::FETCH_ASSOC)) {
         $_SESSION['username']['id_usuario'] = $campo["id_usuario"];
-        $_SESSION['username']['username'] = $campo["username"];
+        $_SESSION['username']['username'] = $campo["nome_usuario"];
         header('Location: index.php');
     } 
     else {

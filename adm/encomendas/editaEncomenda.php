@@ -74,16 +74,20 @@ $encomenda = $stm->fetch(PDO::FETCH_ASSOC);
             value="<?php echo $encomenda["qtd_produto"]?>"/> 
           </p>
     
-          <a>
-            <input type="submit" value="Editar" /> 
-</a>
+          <div id="cxBtn">
+            <input type="submit" value="Editar" />
+            <input type="button" value="Cancelar" id="btnCancelar">
+          </div>
 
 </div>
-        
-        <input type="submit" value="cancelar" href="../listaEncomendas">
-
-</form>
-   
+        </form>
+<script>
+  const btn = document.getElementById('btnCancelar')
+  btn.addEventListener('click',()=>{
+    window.location = '../encomendas/ListaEncomendas.php'
+  })
+</script>
+</div>
 
 
 

@@ -56,17 +56,19 @@
             <input id="qtd" name="qtdEncomenda" type="text"  placeholder="quantidade de roupas"required /> 
           </p>
     
-          <a>
-            <input type="submit" value="Cadastrar" /> 
-</a>
-
-  
+          <div id="cxBtn">
+            <input type="submit" value="Cadastrar" />
+            <input type="button" value="Cancelar" id="btnCancelar">
+          </div>
+</div>
+        </form>
+<script>
+  const btn = document.getElementById('btnCancelar')
+  btn.addEventListener('click',()=>{
+    window.location = '../encomendas/listaEncomendas.php'
+  })
 </script>
 </div>
-        
-</form>
-        <input type="submit" value="cancelar" href="../index.php">
-
 
 
 </body>
