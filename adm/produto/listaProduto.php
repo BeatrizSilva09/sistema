@@ -29,7 +29,7 @@ $p->execute();
         <li><a href="../index.php">voltar</a></li>
                 
             </li>
-            <li><img src="../../img/logo.png" alt="" class="brand-image img-retangular elevation-2" style="opacity: .8" width="100" height="50" >
+            <li><img src="../../img/logo.png" alt="" class="brand-image img-retangular elevation-2"  width="100" height="50" >
         </ul>
     </nav>
     <div class="lista">

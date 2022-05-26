@@ -23,7 +23,7 @@ if(!isset($_SESSION['username'])){
             <li><span style="font-size:20px;fonte-style:italic;color:white;cursor:pointer" onclick="openNav()">&#9776; Abrir</span> <a href="../destroy.php">Sair</a></li>
             <li></li>
             </li>
-            <li><img src="../img/logo.png" alt="" class="brand-image img-retangular elevation-2" style="opacity: .8" width="100" height="50" >
+            <li><img src="../img/logo.png" alt="" class="brand-image img-retangular elevation-2"  width="100" height="50" >
         </ul>
     </nav>
 
@@ -39,17 +39,31 @@ if(!isset($_SESSION['username'])){
 
 <main>
     <div>
-        <h1 style='text-transform: uppercase;'>BEM VINDO, <?php echo($_SESSION['username']['username']) ?></h1>
+        <h1 style='text-transform: uppercase;'>Bem vindo(a), <?php echo($_SESSION['username']['username']) ?></h1>
     </div>
     <div class='cxCard' >
         <div class='card'>
-            <h3>Lista Produto</h3>
+            <h3>Lista de Roupas</h3>
+            <h2>Página que lista as roupas cadastradas</h2>
             <a href="produto/listaProduto.php">
-                <button>Ir Para...</button>
+                <button>IR</button>
+            </a>
+            
+        </div>
+        <div class='card'>
+            <h3>Lista de Clientes</h3>
+            <h2>Página que lista os clientes cadastrados</h2>
+            <a href="cliente/listaCliente.php">
+                <button>IR</button>
             </a>
         </div>
-        <div class='card'></div>
-        <div class='card'></div>
+        <div class='card'>
+            <h3>Lista de Encomendas</h3>
+           <h2>Página que lista as encomendas cadastradas</h2>
+           <a href="encomendas/listaEncomendas.php">
+                <button>IR</button>
+           </a>
+        </div>
     </div> 
 </main>
    

@@ -5,12 +5,12 @@
     font-family: Arial,sans-serif;
   }
    
-  /* remove a linha dos links */
+  
   a{
     text-decoration: none;
   }
    
-  /* esconde as ancoras da tela */
+  
   a.links{
     display: none;
   }
@@ -19,13 +19,14 @@
     min-height: 600px;    
     margin: 10px auto;
     position: relative;   
+    font-style: italic;
   }
 
   h1{
     font-size: 40px;
     color: #9932CC;
     padding: 2px 0 10px 0;
-    font-family: Arial,sans-serif;
+    font-style: italic;
     font-weight: bold;
     text-align: center;
     padding-bottom: 30px;
@@ -36,6 +37,7 @@
     width: 100%;
     height: 2px;
     margin-top: 10px;
+    font-style: italic;
   }
 
   p{
@@ -49,38 +51,20 @@
   label{
     color: #d045d4;
     position: relative;
+    font-style: italic;
   }
+
   
-  /* placeholder */
-::-webkit-input-placeholder  {
-    color: #bebcbc; 
-    font-style: italic;
-  }
-   
-  input:-moz-placeholder,
-  textarea:-moz-placeholder{
-    color: #bebcbc;
-    font-style: italic;
-  }
-  input {
-    outline: none;
-  }
-   
   /*estilo dos input,  menos o checkbox */
   input:not([type="checkbox"]){
     width: 100%;
     margin-top: 4px;
     padding: 10px;    
     border: 1px solid #b2b2b2;
-   
-    -webkit-border-radius: 3px;
     border-radius: 3px;
+    font-style: italic;
    
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
    
-    -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear;
   }
    
   /*estilo do botão submit */
@@ -93,11 +77,11 @@
     font-size: 20px;  
     border: 1px solid #fff;   
     margin-bottom: 10px;  
-    text-shadow: 0 1px 1px #333;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     float: left;
-    transition: all 0.2s linear;
+    font-style: italic;
+    
   }
 
    
@@ -113,78 +97,20 @@
     background: #f7f7f7;
     border: 1px solid rgba(182, 37, 163, 0.8);
     left: 50px;
-    
     border-radius: 5px;
+    font-style: italic;
      
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-fill-mode: both;
-   
-    animation-duration: 0.5s;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
   }
-  /* Efeito ao clicar no botão ( Ir para Login ) */
-#paracadastro:target ~ .content #cadastro,
-#paralogin:target ~ .content #login{
-  z-index: 2;
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
  
-  -webkit-animation-delay: .1s;
-  animation-delay: .1s;
-}
+
  #cxBtn{
    display: flex;
    justify-content: space-between;
   align-items: center;
 
  }
-/*fadeInLeft*/
-@-webkit-keyframes fadeInLeft {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateX(-20px);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translateX(0);
-    }
-  }
-   
-  @keyframes fadeInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-   
-  /*fadeOutLeft*/
-  @-webkit-keyframes fadeOutLeft {
-    0% {
-      opacity: 1;
-      -webkit-transform: translateX(0);
-    }
-    100% {
-      opacity: 0;
-      -webkit-transform: translateX(-20px);
-    }
-  }
-   
-  @keyframes fadeOutLeft {
-    0% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    100% {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-  }
+
+  
 
 
   :root {
@@ -215,6 +141,7 @@
 .dp-menu ul li img {
   display:inline;
   position: relative;
+  
   
 }
 
@@ -265,6 +192,7 @@
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  font-style: italic;
 }
 
 .sidenav a {
@@ -305,42 +233,52 @@ body{
 }
 main{
   background-color: #eee;
+  font-style: italic;
+  margin-top: 2%;
 }
 
-.gallery-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 2vw;
-  padding: 0 2vw;
-}
+
 .cxCard{
   background-color: #eee;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 10px;
+  
 }
 .card{
   width: 300px;
   height: 300px;
+  background-color: #dca3f8;
+  
 }
-.gallery-items{
-  width: 340px;
-  height: 340px;
-  border: 10px solid #FFF;
-  box-shadow: 5px 5px 5px #0006;
-  flex-grow: 1;
-  transition: transform .5s linear;
+.card button{
+  color:#f7f7f7;
+  background-color: #9932CC;
+  width: 100px;
+  height: 30px;
+  border-color: #9932CC;
+  margin: 0;
+  top: 15%;
+  left: 32%;
+  position:relative;
+  font-style: italic;
+  border-radius: 5px;
 }
-.gallery-items img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    
+  
+.card h3{
+  text-align: center;
+  color:#9932CC;
+  margin-top: 10%;
+  font-style: italic;
+  
 }
-
-.gallery-items:hover{
-  transform: scale(1.3);
+.card h2{
+  text-align: center;
+  color:#9932CC;
+  margin-top: 25%;
+  font-style: italic;
 }
 
 
@@ -373,6 +311,7 @@ main{
   text-align: center;
   background-size: 100% auto;
   align-content: center;
+  font-style: italic;
  
  
 }
@@ -380,10 +319,9 @@ main{
   align-items: center;
   border-collapse: collapse;
   width: 100%;
+  font-style: italic;
 
 }
-
-
 
 
 .lista th {
@@ -392,6 +330,7 @@ main{
   border: 1px solid black;
   background-color: #d292f1;
   height: 70px;
+  font-style: italic;
 
 }
 
@@ -399,5 +338,6 @@ main{
   padding: 20px;
   border: 1px solid black;
   width: 100px;
+  font-style: italic;
  
 }

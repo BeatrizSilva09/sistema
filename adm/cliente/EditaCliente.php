@@ -81,7 +81,7 @@ $cliente = $stm->fetch(PDO::FETCH_ASSOC);
 <script>
   const btn = document.getElementById('btnCancelar')
   btn.addEventListener('click',()=>{
-    window.location = '../cliente/EditaCliente.php'
+    window.location = '../cliente/listaCliente.php'
   })
 </script>
 </div>

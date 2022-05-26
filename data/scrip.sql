@@ -46,6 +46,12 @@ VALUES ('1', 'Camiseta', 'Camisa de varias cores', '30.00', '5');
 INSERT INTO `tb_usuarios` (`id_usuario`, `nome_usuario`, `senha_usuario`) 
 VALUES ('1', 'bea', '202cb962ac59075b964b07152d234b70');
 
+INSERT INTO `tb_usuarios` (`id_usuario`, `nome_usuario`, `senha_usuario`) 
+VALUES ('2', 'larissa', '202cb962ac59075b964b07152d234b70');
+
+INSERT INTO `tb_usuarios` (`id_usuario`, `nome_usuario`, `senha_usuario`) 
+VALUES ('3', 'nicolas', '202cb962ac59075b964b07152d234b70');
+
 INSERT INTO `tb_clientes` (`id_cliente`, `nome_cliente`, `endereco_usuario`, `dataNasc_cliente`, `rg_cliente`) 
 VALUES ('', 'Isadora Moraes', 'Rua Lima, 45', '2004-04-04', '87.382.736-48');
 

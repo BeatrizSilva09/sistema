@@ -39,14 +39,14 @@ require('../conexao.php');
             <label for="manterlogado">Manter-me logado</label>
           </p>
            
-          <p> 
+          
             <input type="submit" value="Logar" /> 
-          </p>
+         
            
     
         </form>
       </div>
- 
+</div>
 </body>
 </html>
  

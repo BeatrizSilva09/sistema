@@ -73,6 +73,7 @@ $roupa = $stm->fetch(PDO::FETCH_ASSOC);
           </div>
 
 </div>
+</div>
         </form>
 <script>
   const btn = document.getElementById('btnCancelar')
